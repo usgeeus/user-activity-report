@@ -32,6 +32,7 @@ jobs:
           until: '${{ env.UNTIL }}T23:59:59Z'
           analyze-commits: 'true'
           create-json: 'data.json'
+          include-outside-collaborators: 'true'
 
       - name: Upload Report Artifact
         uses: actions/upload-artifact@v4
